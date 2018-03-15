@@ -1,0 +1,2 @@
+# MyPython
+Python In Detail
