@@ -28,6 +28,12 @@ def translate(w):
 	# search in dict for the word
 	if w in data:
 		return data[w]
+	# Searching for presence of names with first letter capitalized (Eg: city names)
+	elif w.title() in data:
+		return data[w.title()]
+	# Searching the presence of full capitalized names (Eg: NASA)
+	elif w.upper() in data:
+		return data[w.upper()]
 	# if not, check for any close matches - Close Match Algorithm
 	elif len(get_close_matches(w, data.keys())) > 0:
 		# get the first(best) choice from closest matches ratio
