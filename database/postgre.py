@@ -41,10 +41,10 @@ def update(item, quantity, price):
 
 #create_table()
 #insert("Coffee", 20, 250)
-insert("Syrup", 10, 400)
+#insert("Syrup", 10, 400)
 #insert("Tea Cup", 10, 20)
 #delete("Water Cup")
 #delete("Tea Cup")
 #delete("Tea")
-update("Coffee", 5, 300)
+#update("Coffee", 5, 300)
 print(view())
